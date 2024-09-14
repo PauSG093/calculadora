@@ -15,7 +15,8 @@ const StylesApp = StyleSheet.create({
     marginBottom: 15,
   },
   contenedorCalcu: {
-    width: '90%',
+    width: '95%',
+    height: '92%',
     backgroundColor: '#4B4A38', 
     borderRadius: 20,
     padding: 10,
@@ -28,8 +29,8 @@ const StylesApp = StyleSheet.create({
     marginVertical: 10,
   },
   inputContainer: {
-    width: '100%',
-    height: 100,  
+    width: '90%',
+    height: 90,  
     backgroundColor: '#333333',
     borderRadius: 10,
     justifyContent: 'center',
