@@ -21,11 +21,11 @@ const StyleScreen = StyleSheet.create({
   },
   text: {
     fontWeight: 'bold',
-    fontSize: width * 0.03,  // Tamaño más pequeño para mostrar los errores
+    fontSize: width * 0.03,  
     color: 'white',
-    textAlign: 'right',  // Alineación a la derecha para mantener coherencia
-    flexWrap: 'wrap',    // Ajuste del texto en varias líneas si es necesario
-    paddingHorizontal: 10,  // Añadimos un padding lateral para que el texto no quede pegado
+    textAlign: 'right',  
+    flexWrap: 'wrap',   
+    paddingHorizontal: 10,  
   },
 });
 

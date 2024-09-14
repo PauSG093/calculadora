@@ -2,7 +2,6 @@ import React from 'react';
 import { TouchableOpacity, Text } from 'react-native';
 import StyleButtonClear from '../styles/StyleBotonClear';
 
-// Definimos el tipo para las propiedades que recibe ButtonClear
 interface ButtonClearProps {
   manejarClear: () => void;
   children: string;

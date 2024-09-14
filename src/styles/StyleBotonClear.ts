@@ -1,11 +1,14 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
+const buttonSize = width * 0.2;  
 
 const StyleButtonClear = StyleSheet.create({
   buttonClear: {
-    height: 80,
-    width: 80,
-    backgroundColor: '#4B2E0D',  // Color café oscuro
-    marginTop: 0,
+    height: buttonSize,  
+    width: buttonSize,
+    backgroundColor: '#4B2E0D',  
+    margin: 8,
     justifyContent: 'center',
     alignItems: 'center',
     color: 'white',

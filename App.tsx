@@ -6,12 +6,11 @@ import Screen from './src/components/Screen';
 import ButtonClear from './src/components/ButtonClear';
 
 export default function App() {
-  const [input, setInput] = useState<string>('');  // Estado para almacenar el input del usuario
+  const [input, setInput] = useState<string>('');  
 
-  // Función para agregar el valor al input
   const agregarInput = (valor: string): void => {
     if (valor === '√') {
-      // Si se selecciona √, calculamos la raíz cuadrada del número actual
+
       const num = parseFloat(input);
       if (!isNaN(num)) {
         setInput(Math.sqrt(num).toString());
@@ -19,32 +18,27 @@ export default function App() {
         setInput('Error');
       }
     } else if (valor === '^') {
-      // Si se selecciona ^, añadimos la potencia en la expresión
       setInput(input + '**');
     } else {
-      // Para otros botones, simplemente agregamos el valor al input
       setInput(input + valor);
     }
   };
 
-  // Validación de división por cero
   const divisionPorCero = (expresion: string): boolean => {
     return /\/0(?![\d.])/.test(expresion);
   };
 
-  // Función para calcular el resultado final cuando se presiona "="
   const calcularResultado = (): void => {
-    // Verificar si se intenta dividir por cero
     if (divisionPorCero(input)) {
       setInput('Error: No se puede dividir para 0');
       return;
     }
 
     try {
-      const resultado = eval(input);  // Evaluar la expresión ingresada
+      const resultado = eval(input); 
       setInput(resultado.toString());
     } catch (error) {
-      setInput('Error: Mejore su operacion');  // Mostrar "Error" si la expresión no es válida
+      setInput('Error: Mejore su operacion');  
     }
   };
 
@@ -88,7 +82,7 @@ export default function App() {
         <View style={StylesApp.fila}>
         <Button manejarClic={calcularResultado}>=</Button>
         <Button manejarClic={agregarInput}>.</Button>
-          <ButtonClear manejarClear={() => setInput('')}>C</ButtonClear>
+        <ButtonClear manejarClear={() => setInput('')}>C</ButtonClear>
         </View>
       </View>
     </View>

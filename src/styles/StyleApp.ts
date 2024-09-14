@@ -4,7 +4,7 @@ const StylesApp = StyleSheet.create({
   app: {
     flex: 1,
     paddingTop: 40,
-    backgroundColor: '#4269',  // Fondo anterior de la calculadora
+    backgroundColor: '#4269',  
     justifyContent: 'flex-start',
     alignItems: 'center',
   },
@@ -29,13 +29,13 @@ const StylesApp = StyleSheet.create({
   },
   inputContainer: {
     width: '100%',
-    height: 100,  // Tamaño original del input (pantalla)
+    height: 100,  
     backgroundColor: '#333333',
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'flex-end',
     paddingRight: 20,
-    marginBottom: 20,  // Separación entre el input y los botones
+    marginBottom: 20,  
   },
   inputText: {
     color: '#ffffff',

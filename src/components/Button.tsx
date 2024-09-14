@@ -8,12 +8,10 @@ interface ButtonProps {
 }
 
 const Button = ({ manejarClic, children }: ButtonProps) => {
-  // Verificar si es un operador
   const esOperator = (valor: string | undefined): boolean => {
     return valor !== undefined && isNaN(Number(valor)) && valor !== '.' && valor !== '=';
   };
 
-  // Aplicar estilo basado en si es un operador o no
   const buttonStyle = esOperator(children) ? StylesButton.operador : StylesButton.button;
 
   return (
