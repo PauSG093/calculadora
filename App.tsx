@@ -86,8 +86,7 @@ export default function App() {
         <View style={StylesApp.fila}>
           <Button manejarClic={agregarInput}>√</Button>
           <Button manejarClic={agregarInput}>^</Button>
-          <ButtonClear manejarClear={() => setInput('')}>Clear</ButtonClear>
-          <ButtonClear manejarClear={() => setInput('')}>Historial</ButtonClear>
+          <ButtonClear manejarClear={() => setInput('')}>C</ButtonClear>
         </View>
       </View>
     </View>
