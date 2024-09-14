@@ -2,10 +2,10 @@ import { StyleSheet } from 'react-native';
 
 const StyleButtonClear = StyleSheet.create({
   buttonClear: {
-    height: 30,
-    flex: 1,
+    height: 80,
+    width: 80,
     backgroundColor: '#4B2E0D',  // Color café oscuro
-    marginTop: 8,
+    marginTop: 0,
     justifyContent: 'center',
     alignItems: 'center',
     color: 'white',
